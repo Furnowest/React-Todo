@@ -1,0 +1,15 @@
+.mylist{
+ background-color: rgb(211, 197, 211);
+  /* text-decoration: line-through; */
+
+}
+.item.completed {
+  background-color: rgb(193, 224, 224);
+  text-decoration: line-through;
+}
+.add-btn{
+  background: wheat;
+}
+.btn{
+  background: wheat;
+}

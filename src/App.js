@@ -1,25 +1,28 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
-
+import "./style.css"
 
 
 const mytodo = [
 {
-  task: 'clean bathroom',
+  task: 'Clean bathroom',
   id:14,
   completed: false
 
 },
 {
-  task: 'make dinner',
+  task: 'Make dinner',
   id: 24,
+  completed: false
+},
+{
+  task: 'Water garden',
+  id: 34,
   completed: false
 }
 ];
-
 class App extends React.Component {
   constructor() {
     super();
