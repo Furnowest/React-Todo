@@ -1,20 +1,17 @@
-import React, { Component} from 'react';
-import PropTypes from 'prop-types';
-import TodoList from './TodoList';
+import React from 'react';
+
+const Todo = props => {
+  return (
+    <div
+      className={`item${props.item.completed ? " completed" : ""}`}
+      onClick={() => props.toggleItem(props.item.id)}
+    >
+      <p>{props.item.task}</p>
+    </div>
+  );
+};
 
 
-class Todo extends Component {
-  
-  render() {
-    return this.props.todo.map((todo) =>(
-   <TodoList  key={todo.id} todo={todo} />
-   
-    ));
-  }
-}
-Todo.propTypes = {
-  todo: PropTypes.array.isRequired
-}
 
 
 export default Todo;
